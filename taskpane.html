@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vorlage ausfüllen</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Vorlage ausfüllen</h1>
+        </header>
+        <div id="content">
+            <div id="status" class="status hidden"></div>
+            <div id="fields-container">
+                <p class="hint">Dokument wird geladen&nbsp;…</p>
+            </div>
+            <div id="actions">
+                <button id="fill-btn" class="btn-primary hidden">&#10003;&nbsp; Ausfüllen</button>
+                <button id="scan-btn" class="btn-secondary">&#8635;&nbsp; Neu einlesen</button>
+            </div>
+        </div>
+    </div>
+    <script src="taskpane.js"></script>
+</body>
+</html>
