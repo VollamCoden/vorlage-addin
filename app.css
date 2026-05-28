@@ -1,30 +1,49 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Aller", "Segoe UI", Arial, sans-serif;
     font-size: 13px;
-    color: #212121;
+    color: #23240F;
     background: #fff;
 }
 
+/* ── Header ── */
 header {
-    background: #2E7D32;
-    color: #fff;
-    padding: 12px 16px;
+    background: #73B632;
+    padding: 10px 14px 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img.logo {
+    height: 36px;
+    width: auto;
 }
 
 header h1 {
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
     letter-spacing: 0.2px;
+    line-height: 1.2;
 }
 
+header h1 span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.82);
+    margin-top: 1px;
+}
+
+/* ── Content ── */
 #content {
     padding: 14px 16px;
 }
 
 .hint {
-    color: #757575;
+    color: #888;
     font-size: 12px;
     margin: 8px 0;
 }
@@ -36,31 +55,31 @@ header h1 {
 
 .field-row label {
     display: block;
-    font-weight: bold;
-    font-size: 10.5px;
-    color: #2E7D32;
+    font-weight: 700;
+    font-size: 10px;
+    color: #73B632;
     margin-bottom: 3px;
     text-transform: uppercase;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.5px;
 }
 
 .field-row input[type="text"],
 .field-row select {
     width: 100%;
     padding: 6px 8px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #C8D8A8;
     border-radius: 3px;
     font-size: 12px;
-    font-family: Arial, sans-serif;
-    color: #212121;
+    font-family: "Aller", "Segoe UI", Arial, sans-serif;
+    color: #23240F;
     background: #fff;
 }
 
 .field-row input[type="text"]:focus,
 .field-row select:focus {
     outline: none;
-    border-color: #2E7D32;
-    box-shadow: 0 0 0 2px #E8F5E9;
+    border-color: #73B632;
+    box-shadow: 0 0 0 2px rgba(115, 182, 50, 0.15);
 }
 
 /* ── Buttons ── */
@@ -72,34 +91,35 @@ header h1 {
 }
 
 .btn-primary {
-    background: #2E7D32;
+    background: #73B632;
     color: #fff;
     border: none;
     padding: 9px 16px;
     border-radius: 3px;
     font-size: 13px;
-    font-family: Arial, sans-serif;
+    font-family: "Aller", "Segoe UI", Arial, sans-serif;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
     width: 100%;
+    letter-spacing: 0.2px;
 }
 
-.btn-primary:hover:not(:disabled) { background: #1B5E20; }
-.btn-primary:disabled { opacity: 0.6; cursor: default; }
+.btn-primary:hover:not(:disabled) { background: #5d9428; }
+.btn-primary:disabled { opacity: 0.55; cursor: default; }
 
 .btn-secondary {
     background: #fff;
-    color: #2E7D32;
-    border: 1px solid #2E7D32;
+    color: #73B632;
+    border: 1px solid #73B632;
     padding: 7px 16px;
     border-radius: 3px;
     font-size: 12px;
-    font-family: Arial, sans-serif;
+    font-family: "Aller", "Segoe UI", Arial, sans-serif;
     cursor: pointer;
     width: 100%;
 }
 
-.btn-secondary:hover { background: #E8F5E9; }
+.btn-secondary:hover { background: #F4FAE9; }
 
 /* ── Status ── */
 .hidden { display: none !important; }
@@ -113,43 +133,43 @@ header h1 {
 }
 
 .status.success {
-    background: #E8F5E9;
-    color: #1B5E20;
-    border: 1px solid #A5D6A7;
+    background: #F4FAE9;
+    color: #3d6b10;
+    border: 1px solid #C8D8A8;
 }
 
 .status.warning {
-    background: #FFF8E1;
-    color: #E65100;
-    border: 1px solid #FFE082;
+    background: #FFFBE6;
+    color: #7a5800;
+    border: 1px solid #FFE58F;
 }
 
 .status.error {
-    background: #FFEBEE;
-    color: #C62828;
-    border: 1px solid #EF9A9A;
+    background: #FFF1F0;
+    color: #a8071a;
+    border: 1px solid #FFA39E;
 }
 
 .status.info {
-    background: #E3F2FD;
-    color: #1565C0;
-    border: 1px solid #90CAF9;
+    background: #F4FAE9;
+    color: #3d6b10;
+    border: 1px solid #C8D8A8;
 }
 
 .no-placeholders {
-    color: #757575;
+    color: #888;
     font-style: italic;
     font-size: 12px;
     margin: 12px 0;
 }
 
 .section-title {
-    font-size: 11px;
-    font-weight: bold;
-    color: #616161;
+    font-size: 10px;
+    font-weight: 700;
+    color: #73B632;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     margin-bottom: 10px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #73B632;
 }
